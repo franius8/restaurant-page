@@ -70,6 +70,10 @@ body {
     cursor: pointer;
 }
 
+.active {
+    background-color: var(--600);
+}
+
 #mainelement {
     display: flex;
     align-items: center;
@@ -78,7 +82,7 @@ body {
 
 #mainimage {
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     object-fit: cover;
 }
 

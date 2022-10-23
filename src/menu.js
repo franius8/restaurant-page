@@ -1,19 +1,19 @@
 import headerBuilder from './header';
 import footerBuilder from './footer';
 
-const aboutBuilder = (() => {
+const menuBuilder = (() => {
   const content = document.getElementById('content');
   const createMiddleMainImage = () => {
     const mainImage = document.createElement('img');
     mainImage.setAttribute('id', 'mainimage');
-    mainImage.setAttribute('src', '../images/pasta-1181189_1920.jpg');
+    mainImage.setAttribute('src', '../images/salad-1672505_1920.jpg');
     return mainImage;
   };
   const createMiddleMainText = () => {
     const mainText = document.createElement('div');
     mainText.setAttribute('id', 'maintext');
     const p = document.createElement('p');
-    p.textContent = 'Our story – Passion for food';
+    p.textContent = 'The menu - our biggest strenght';
     mainText.appendChild(p);
     return mainText;
   };
@@ -30,12 +30,12 @@ const aboutBuilder = (() => {
     middle.appendChild(createMiddleMainElement());
     return middle;
   };
-  const buildAboutpage = () => {
+  const buildMenupage = () => {
     content.appendChild(headerBuilder.buildHeader());
     content.appendChild(middleBuilder());
     content.appendChild(footerBuilder.buildFooter());
   };
-  return { buildAboutpage };
+  return { buildMenupage };
 })();
 
-export default aboutBuilder;
+export default menuBuilder;

@@ -1,7 +1,12 @@
 import homepageBuilder from './homepage';
 import aboutBuilder from './about';
+import menuBuilder from './menu';
 
 const helper = (() => {
+  const markActiveButton = (id) => {
+    const button = document.getElementById(id);
+    button.classList.add('active');
+  };
   const clearSite = () => {
     const content = document.getElementById('content');
     content.textContent = '';
@@ -16,19 +21,22 @@ const helper = (() => {
         switch (id) {
           case 'homepage':
             homepageBuilder.buildHomepage();
-            addNavbarListeners();
             break;
           case 'about':
             aboutBuilder.buildAboutpage();
-            addNavbarListeners();
+            break;
+          case 'menu':
+            menuBuilder.buildMenupage();
             break;
           default:
             break;
         }
+        addNavbarListeners();
+        markActiveButton(id);
       });
     });
   };
-  return { clearSite, addNavbarListeners };
+  return { clearSite, addNavbarListeners, markActiveButton };
 })();
 
 export default helper;
