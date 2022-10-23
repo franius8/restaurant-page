@@ -5,10 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Lobster&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 <body>
     <div id="content">
+        <div id="header">
+            <div id="logo">Yummy Food</div>
+            <div id="navbar">
+                <ul>
+                    <li>Homepage</li>
+                    <li>About us</li>
+                    <li>Our menu</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div id="middle">        
+            <div id="mainelement">
+                <img id="mainimage" src="../images/pizza-3000273_1920-2.jpg">
+                <div id="maintext">
+                    <p>Traditional cuisine in the modern world</p>
+                    <button>Discover more...</button>
+                </div>
+            </div>
+            <div id="middleicons">
+                <div class="icondiv">
+                    <div id="icon"><span class="material-symbols-outlined">eco</span></div>
+                    <div class="iconheader">Organic ingredients</div>
+                    <div class="icontext">We use only the finest, organically farmed ingredients</div>
+                </div>
+                <div class="icondiv">
+                    <div id="icon"><span class="material-symbols-outlined">restaurant_menu</span></div>
+                    <div class="iconheader">Diverse menu</div>
+                    <div class="icontext">In our menu there is something for everyone</div>
+                </div>
+                <div class="icondiv">
+                    <div id="icon"><span class="material-symbols-outlined">family_restroom</span></div>
+                    <div class="iconheader">Families welcome</div>
+                    <div class="icontext">Everyone is sure to have a pleasant time dining with us</div>
+                </div>
+            </div>
+            <div id="quotediv">
+                <div id="quotetext">Our main focus is that <span class="em">everyone</span> has a good time dining with us.</div>
+                <div class="quoteauthor"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
