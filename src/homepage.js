@@ -7,7 +7,7 @@ const homepageBuilder = (() => {
   const createMiddleMainImage = () => {
     const mainImage = document.createElement('img');
     mainImage.setAttribute('id', 'mainimage');
-    mainImage.setAttribute('src', '../images/pizza-3000273_1920-2.jpg');
+    mainImage.setAttribute('src', 'images/pizza-3000273_1920-2.jpg');
     return mainImage;
   };
   const createMiddleMainText = () => {

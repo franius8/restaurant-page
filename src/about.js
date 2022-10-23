@@ -6,7 +6,7 @@ const aboutBuilder = (() => {
   const createMiddleMainImage = () => {
     const mainImage = document.createElement('img');
     mainImage.setAttribute('id', 'mainimage');
-    mainImage.setAttribute('src', '../images/pasta-1181189_1920.jpg');
+    mainImage.setAttribute('src', 'images/pasta-1181189_1920.jpg');
     return mainImage;
   };
   const createMiddleMainText = () => {
