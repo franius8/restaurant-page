@@ -1,0 +1,155 @@
+:root {
+    --50: #fffbeb;
+    --100: #fef3c7;
+    --200: #fde68a;
+    --300: #fcd34d;
+    --400: #fbbf24;
+    --500: #f59e0b;
+    --600: #d97706;
+    --700: #b45309;
+    --800: #92400e;
+    --900: #78350f;
+    --standard-font: 'Open Sans', sans-serif;
+    --cursive-font: 'Lobster', cursive;
+    --logo-font: 'Island Moments', cursive;
+}
+
+/* For Google Icons */
+.material-symbols-outlined { 
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: var(--500);
+  font-size: 4rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--standard-font);
+}
+
+#header {
+    background-color: var(--500);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    box-shadow: 0px 3px 5px rgb(80, 80, 80);
+}
+
+#logo {
+    padding: 1rem 2rem;
+    font-family: var(--logo-font);
+    font-size: 3rem;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template: 1fr / repeat(4, 1fr);
+}
+
+#navbar ul li {
+    padding: 2rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+#navbar ul li:hover {
+    background-color: var(--600);
+    cursor: pointer;
+}
+
+#mainelement {
+    display: flex;
+    align-items: center;
+}
+
+#mainimage {
+    width: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+#maintext {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
+}
+
+#maintext p {
+    margin: 0;
+    font-family: var(--cursive-font);
+    font-size: 3rem;
+}
+
+#maintext button {
+    background-color: var(--500);
+    border: 1px solid var(--500);
+    border-radius: 1rem;
+    font-family: inherit;
+    color: inherit;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+#maintext button:hover {
+    background-color: var(--600);
+    border: 1px solid var(--600);
+    cursor: pointer;
+}
+
+#middleicons {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.icondiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 15rem;
+    text-align: center;
+}
+
+.iconheader {
+    font-family: var(--cursive-font);
+    font-size: 1.5rem;
+}
+
+#quotediv {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--500);
+    color: white;
+}
+
+.em {
+    font-family: var(--cursive-font);
+}
+
