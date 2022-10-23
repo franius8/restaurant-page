@@ -2,8 +2,11 @@ const headerBuilder = (() => {
   const createHeaderList = () => {
     const list = document.createElement('ul');
     const listData = ['Homepage', 'About us', 'Our menu', 'Contact'];
-    listData.forEach((item) => {
+    const iDs = ['homepage', 'about', 'menu', 'contact'];
+    listData.forEach((item, index) => {
       const li = document.createElement('li');
+      li.setAttribute('id', iDs[index]);
+      li.classList.add('navbaritem');
       li.textContent = item;
       list.appendChild(li);
     });
