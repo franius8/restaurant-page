@@ -1,10 +1,10 @@
 import headerBuilder from './header';
+import footerBuilder from './footer';
 
 // File is prepared bottom-to-top.
 
-const siteBuilder = (() => {
+const homepageBuilder = (() => {
   const content = document.getElementById('content');
-  // Subfunctions for header parts.
   // Subfunctions for middle parts.
   const createMiddleMainImage = () => {
     const mainImage = document.createElement('img');
@@ -84,8 +84,6 @@ const siteBuilder = (() => {
     hoursContent.appendChild(hoursTable);
     return hoursContent;
   };
-  // Functions for creating header parts.
-
   // Functions for creating middle parts.
   const createMiddleMainElement = () => {
     const middleMainElement = document.createElement('div');
@@ -114,38 +112,6 @@ const siteBuilder = (() => {
     hoursDiv.appendChild(createHoursContent());
     return hoursDiv;
   };
-  // Functions for creating footer parts.
-  const createCorporateName = () => {
-    const corporateName = document.createElement('div');
-    corporateName.setAttribute('id', 'corporatename');
-    corporateName.textContent = 'Yummy Food Group';
-    return corporateName;
-  };
-  const createCorporateData = () => {
-    const corporateData = document.createElement('div');
-    corporateData.setAttribute('id', 'corporatedata');
-    const pData = ['123 Yummy Ave.', 'New York, NY 12345', 'United States'];
-    for (let i = 0; i < 3; i += 1) {
-      const p = document.createElement('p');
-      p.textContent = pData[i];
-      corporateData.appendChild(p);
-    }
-    return corporateData;
-  };
-  const createAuthorDiv = () => {
-    const authorDiv = document.createElement('div');
-    authorDiv.setAttribute('id', 'author');
-    authorDiv.textContent = 'Created by F. Skawiński';
-    const a = document.createElement('a');
-    a.setAttribute('href', 'https://github.com/franius8');
-    const img = document.createElement('img');
-    img.setAttribute('id', 'githubicon');
-    img.setAttribute('src', '../images/GitHub-Mark-64px.png');
-    a.appendChild(img);
-    authorDiv.appendChild(a);
-    return authorDiv;
-  };
-  // Functions for creating the main three parts of the site.
   const middleBuilder = () => {
     const middle = document.createElement('div');
     middle.setAttribute('id', 'middle');
@@ -155,21 +121,12 @@ const siteBuilder = (() => {
     middle.appendChild(createMiddleHours());
     return middle;
   };
-  const footerBuilder = () => {
-    const footer = document.createElement('div');
-    footer.setAttribute('id', 'footer');
-    footer.appendChild(createCorporateName());
-    footer.appendChild(createCorporateData());
-    footer.appendChild(createAuthorDiv());
-    return footer;
-  };
-  // Function for building the whole site.
   const buildSite = () => {
     content.appendChild(headerBuilder.buildHeader());
     content.appendChild(middleBuilder());
-    content.appendChild(footerBuilder());
+    content.appendChild(footerBuilder.buildFooter());
   };
   return { buildSite };
 })();
 
-siteBuilder.buildSite();
+homepageBuilder.buildSite();
