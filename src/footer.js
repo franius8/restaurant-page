@@ -24,7 +24,7 @@ const footerBuilder = (() => {
     a.setAttribute('href', 'https://github.com/franius8');
     const img = document.createElement('img');
     img.setAttribute('id', 'githubicon');
-    img.setAttribute('src', '../images/GitHub-Mark-64px.png');
+    img.setAttribute('src', 'images/GitHub-Mark-64px.png');
     a.appendChild(img);
     authorDiv.appendChild(a);
     return authorDiv;
