@@ -218,3 +218,47 @@ td:nth-child(2) {
 #corporatedata {
     line-height: 0.5rem;
 }
+ /* About us page */
+ #story {
+    display: grid;
+    grid-template: auto / 1fr;
+    justify-content: center;
+    max-width: 70%;
+    margin: 2rem auto;
+ }
+
+ .lefttextdiv {
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    justify-content: center;
+ }
+
+ .righttextdiv {
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+    justify-content: center;
+ }
+
+ .lefttext, .righttext, .storyimagediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+ }
+
+ .storyheader {
+    font-family: var(--cursive-font);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+ }
+
+ .storyimagediv {
+    padding: 1rem;
+ }
+ 
+ .storyimage {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 1rem;
+ }
