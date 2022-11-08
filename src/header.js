@@ -19,13 +19,13 @@ const headerBuilder = (() => {
     return logo;
   };
   const createHeaderNavbar = () => {
-    const navBar = document.createElement('div');
+    const navBar = document.createElement('nav');
     navBar.setAttribute('id', 'navbar');
     navBar.appendChild(createHeaderList());
     return navBar;
   };
   const buildHeader = () => {
-    const header = document.createElement('div');
+    const header = document.createElement('header');
     header.setAttribute('id', 'header');
     header.appendChild(createHeaderLogo());
     header.appendChild(createHeaderNavbar());

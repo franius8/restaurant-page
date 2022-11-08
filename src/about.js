@@ -61,6 +61,7 @@ const aboutBuilder = (() => {
     const mainImage = document.createElement('img');
     mainImage.setAttribute('id', 'mainimage');
     mainImage.setAttribute('src', 'images/pasta-1181189_1920.jpg');
+    mainImage.setAttribute('alt', '');
     return mainImage;
   };
   const createMiddleMainText = () => {
@@ -80,7 +81,7 @@ const aboutBuilder = (() => {
   };
   // Function for builing unique page content
   const middleBuilder = () => {
-    const middle = document.createElement('div');
+    const middle = document.createElement('main');
     middle.setAttribute('id', 'middle');
     middle.appendChild(createMiddleMainElement());
     middle.appendChild(createMiddleStory());

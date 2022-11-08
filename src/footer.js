@@ -30,7 +30,7 @@ const footerBuilder = (() => {
     return authorDiv;
   };
   const buildFooter = () => {
-    const footer = document.createElement('div');
+    const footer = document.createElement('footer');
     footer.setAttribute('id', 'footer');
     footer.appendChild(createCorporateName());
     footer.appendChild(createCorporateData());

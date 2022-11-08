@@ -7,6 +7,7 @@ const menuBuilder = (() => {
     const mainImage = document.createElement('img');
     mainImage.setAttribute('id', 'mainimage');
     mainImage.setAttribute('src', 'images/salad-1672505_1920.jpg');
+    mainImage.setAttribute('alt', '');
     return mainImage;
   };
   const createMiddleMainText = () => {
@@ -25,7 +26,7 @@ const menuBuilder = (() => {
     return middleMainElement;
   };
   const middleBuilder = () => {
-    const middle = document.createElement('div');
+    const middle = document.createElement('main');
     middle.setAttribute('id', 'middle');
     middle.appendChild(createMiddleMainElement());
     return middle;

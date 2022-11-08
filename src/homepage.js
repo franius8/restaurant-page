@@ -8,6 +8,7 @@ const homepageBuilder = (() => {
     const mainImage = document.createElement('img');
     mainImage.setAttribute('id', 'mainimage');
     mainImage.setAttribute('src', 'images/pizza-3000273_1920-2.jpg');
+    mainImage.setAttribute('alt', '');
     return mainImage;
   };
   const createMiddleMainText = () => {
@@ -111,7 +112,7 @@ const homepageBuilder = (() => {
     return hoursDiv;
   };
   const middleBuilder = () => {
-    const middle = document.createElement('div');
+    const middle = document.createElement('main');
     middle.setAttribute('id', 'middle');
     middle.appendChild(createMiddleMainElement());
     middle.appendChild(createMiddleIcons());
